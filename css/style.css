@@ -9,7 +9,7 @@ body {
 
 
 .cars {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,6 +27,7 @@ body {
 .cars_element {
     position: relative;
     padding: 50px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1)
 }
 
 .cars_element-orange {
@@ -110,19 +111,41 @@ body {
         display: grid;
         grid-template-columns: repeat(auto-fit, 310px);
         grid-auto-rows: 500px;
-        
         justify-content: center;
         
 }
+
+    .cars_element-orange {
+  
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .cars_element-green {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
 }
 
 
 @media (max-width: 768px) {
     .cars_wrapper {
         display: grid;
+        padding: 50px 0;
         grid-template-columns: 310px;
         grid-template-rows: repeat(3,500px);
         justify-content: center;
         min-width: 100%;
 }
+    .cars_element-orange {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+
+    .cars_element-green {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+}
+
 }

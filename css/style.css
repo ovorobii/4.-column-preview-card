@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca';
+}
+
+
+.cars {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 95%);
+}
+
+.cars_wrapper {
+    position: relative;
+    min-width: 930px;
+    display: grid;
+    grid-template-columns: repeat(3, 310px);
+    grid-template-rows: 500px;
+}
+
+.cars_element {
+    position: relative;
+    padding: 50px;
+}
+
+.cars_element-orange {
+    
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.cars_element-blue  {
+    
+    background-color: hsl(184, 100%, 22%);
+}
+
+.cars_element-green {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.cars_title {
+    margin-top: 30px;
+    font-family: 'Big Shoulders';
+    font-size: 30px;
+    color: hsl(0, 0%, 95%);
+}
+
+.cars_descr {
+    
+    margin-top: 30px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.cars_btn {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+
+
+
+.cars_btn-orange {
+    color: hsl(31, 77%, 52%);
+}
+.cars_btn-blue {
+    color: hsl(184, 100%, 22%);
+}
+.cars_btn-green {
+    color: hsl(179, 100%, 13%);
+}
+
+.cars_btn-orange:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: solid 3px hsl(0, 0%, 95%)
+}
+.cars_btn-blue:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: solid 3px hsl(0, 0%, 95%)
+}
+.cars_btn-green:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: solid 3px hsl(0, 0%, 95%)
+}
